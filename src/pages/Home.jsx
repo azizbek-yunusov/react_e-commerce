@@ -7,15 +7,6 @@ import HomeLoaderSkeleton from '../components/Loaders/HomeLoaderSkeleton'
 import Offer from '../components/Offer'
 
 const Home = () => {
-  const [loading, setLoading] = useState(true)
-  useEffect(() => {
-  
-    return () => {
-      setTimeout(() => {
-        setLoading(false)
-      }, 2500);
-    }
-  }, [])
   return (
     <> 
       <BannerCarousel />

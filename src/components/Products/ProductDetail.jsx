@@ -54,7 +54,7 @@ const ProductDetail = () => {
   }, [])
   return (
     <div className='h-full min-h-[500px] animated-show'>
-      {loading ? (<SkeletonLoaderDetail />) : (details.map(product => (
+      {details.map(product => (
         <div className="container-full block details" key={product.id}>
           <div className="flex items-center my-2">
             <button onClick={() => goback(-1)} className='lg:px-4 px-2 text-md  rounded-full mr-4 py-2 flex font-medium border border-gray-300'>
@@ -152,7 +152,7 @@ const ProductDetail = () => {
             </div>
           </div>
         </div>
-      )))}
+      ))}
       {/* <div className="lg:hidden fixed flex justify-between">
         <p className="text-3xl lg:font-medium font-semibold mt-2 lg:mt-0">{numberWithCommas(product.price)}{" "}cум </p>
         <button onClick={() => dispatch(addToBasket(product.imgUrl))} className='mt-6 text-2xl font-normal rounded-lg flex items-center justify-center lg:py-4 py-3 w-full bg-yellow-400'>
