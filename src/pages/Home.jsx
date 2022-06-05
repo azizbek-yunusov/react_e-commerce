@@ -18,17 +18,11 @@ const Home = () => {
   }, [])
   return (
     <> 
-      {
-        loading ? 
-        <HomeLoaderSkeleton />
-        : <div>
-            <BannerCarousel />
-            <Catalog />
-            <GroupsList />
-            <BrandsList />
-            <Offer />
-          </div>
-      }
+      <BannerCarousel />
+      <Catalog />
+      <GroupsList />
+      <BrandsList />
+      <Offer />
     </>
 
   )
