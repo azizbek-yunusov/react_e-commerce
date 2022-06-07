@@ -7,7 +7,11 @@ const WarningToastify = () => {
   const { isShowToastify } = useSelector(state => state)
   const dispatch = useDispatch()
   useEffect(() => {
-    clearInterval(2000, closeToastify())
+    return (() => {
+
+      clearInterval(2000, closeToastify())
+    }
+  )
   }, [])
   
   return (

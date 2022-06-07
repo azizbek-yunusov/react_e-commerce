@@ -18,12 +18,12 @@ const ProductCard = ({id, title, price, imgUrl, groupName, classes, group}) => {
     setAnimtedHeart(!animtedHeart)
   }
   return (
-    <div className="mx-3 selection:inset-0 lg:border-0 rounded-2xl border border-gray-100 mt-4 hover:rounded-xl lg:hover:shadow-xl ease-linear opacityAnimeted">
-      <div className="relative flex flex-col pt-1 px-3 pb-3">
+    <div className="lg:mx-3 mx-[3px] selection:inset-0 lg:border-0 rounded-2xl border border-gray-100 mt-4 hover:rounded-xl lg:hover:shadow-xl ease-linear opacityAnimeted">
+      <div className="relative flex justify-between h-full flex-col pt-1 px-3 pb-3">
         <div className="absolute top-0 right-0 p-2 cursor-pointer">
             {!showHeart ? <div onMouseEnter={toggleHovered} onMouseLeave={toggleHovered} onClick={handleHeart} className={animtedHeart ? "animtedHeart text-red-600" : " text-red-600"}>{HeartRegIcon} </div> : <div onClick={handleHeart} className="">{HeartSolIcon} </div> }
         </div>
-        <div className="absolute top-0 ml-3 mt-2 left-0 text-yellow-500 rounded-md px-3 py-[2px] pb-[4px] bg-zinc-800 font-semibold text-xs">{group}</div>
+        <div className="absolute top-0 ml-3 mt-2 left-0 text-yellow-500 rounded-md px-3 py-[2px] pb-[4px] bg-zinc-800 font-semibold text-xs" >{group}</div>
         {/* <div className="absolute top-12 right-0 p-2 cursor-pointer">
             {!copyUrl ? <div onClick={copy} className="">{BackIcon} </div> : <div className="">"copy"</div> }
         </div> */}

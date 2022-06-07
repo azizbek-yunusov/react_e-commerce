@@ -1,0 +1,24 @@
+.PageAnimated {
+  animation: PageAnimated .5s ease;
+}
+@keyframes PageAnimated {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.emptyAnimated {
+  animation: empty .5s ease-in alternate;
+}
+@keyframes empty {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

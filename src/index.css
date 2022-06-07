@@ -2,9 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 0 none !important;
   -webkit-tap-highlight-color: transparent;
-  transition: all .2s linear;
+  outline: 0 none !important;
 }
 button {
   outline: none;
@@ -14,30 +13,16 @@ button {
     width: 14px;
     border-radius: 6px;
 
-  }
-  ::-webkit-scrollbar-thumb {
+}
+::-webkit-scrollbar-thumb {
       background-color: #b4b4b4;
       border-radius: 6px;
       border: 3px solid white;
-  }
-  ::-webkit-scrollbar-thumb:hover {
+}
+::-webkit-scrollbar-thumb:hover {
       background-color: #ffb20b;
-  }
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.monaco-editor .cursors-layer .cursor {
-  background: #12c2e9; 
-  background: -webkit-linear-gradient(
-    to top,
-    #f64f59,
-    #c471ed,
-    #12c2e9
-  ); 
-  background: linear-gradient(
-    to top,
-    #f64f59,
-    #c471ed,
-    #12c2e9
-  ); 
-}
+

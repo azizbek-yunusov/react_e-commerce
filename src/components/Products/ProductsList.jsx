@@ -39,7 +39,7 @@ const ProductsList = ({id, groupName, group}) => {
 
   return (
     <div className="container-full lg:my-5">
-      <div className="flex justify-between w-full">
+      <div className="flex justify-between w-full items-center">
         <h1 className="text-2xl text-zinc-700 font-medium">{groupName}</h1>
         <Link className='text-blue-500 normal-case flex font-semibold bestAnime' to={`/product/${group}`}>
         Смотреть все {" "}

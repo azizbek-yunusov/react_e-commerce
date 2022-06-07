@@ -1,5 +1,6 @@
 import { Warning } from 'postcss'
 import React from 'react'
+import { Link } from 'react-router-dom'
 // import AppStoreIMG from '../assets/img/AppStore.png'
 import MessegeButton from './MessegeButton'
 import TopButton from './TopButton'
@@ -16,7 +17,7 @@ const Footer = () => {
           <div className="grid lg:grid-cols-4 grid-cols-1 lg:gap-10">
             <div className="grid grid-cols-2 gap-5">
               <div className="block text-white">
-                <h1 className='text-4xl text-yellow-500 font-semibold'>logo.uz</h1>
+                <Link to={"/"} className='text-red-600 font-bold lg:text-4xl'>olma.uz</Link>
                 <div className="block w-full">
                   <p className='text-white text-sm mt-5'>Телефон поддержки</p>
                   <p className='text-white text mt-2 font-medium'>+998 (94) 554 55 94</p>
@@ -57,30 +58,30 @@ const Footer = () => {
             </div>
             <div className="block">
               <h1 className="text-red-600 text-xl lg:mt-0 mt-2 font-semibold">Информация</h1>
-              <p className="text-white text-base mt-3">О компании</p>
-              <p className="text-white text-base mt-2">Вакансии</p>
-              <p className="text-white text-base mt-3">Публичная оферта</p>
-              <p className="text-white text-base mt-3">Возврат и обмен товаров</p>
-              <p className="text-white text-base mt-3">Условия рассрочки</p>
-              <p className="text-white text-base mt-3">Оплатить онлайн</p>
+              <p className="text-white text-base cursor-pointer mt-3">О компании</p>
+              <p className="text-white text-base cursor-pointer mt-2">Вакансии</p>
+              <p className="text-white text-base cursor-pointer mt-3">Публичная оферта</p>
+              <p className="text-white text-base cursor-pointer mt-3">Возврат и обмен товаров</p>
+              <p className="text-white text-base cursor-pointer mt-3">Условия рассрочки</p>
+              <p className="text-white text-base cursor-pointer mt-3">Оплатить онлайн</p>
               <h1 className="text-red-600 text-xl font-semibold mt-4">О нас</h1>
-              <p className="text-white text-base mt-2">Оставить отзыв</p>
-              <p className="text-white text-base mt-2">Адрес</p>
+              <p className="text-white text-base cursor-pointer mt-2">Оставить отзыв</p>
+              <p className="text-white text-base cursor-pointer mt-2">Адрес</p>
 
             </div>
             <div className="block mt-10">
               <h1 className="text-white font-light">Eco-friendly</h1>
-              <p className="text-white text-base font-semibold mt-3">
+              <p className="text-white text-base cursor-pointer font-semibold mt-3">
                 Политика обработки персональных данных
               </p>
-              <p className="text-white text-base font-semibold mt-3">
+              <p className="text-white text-base cursor-pointer font-semibold mt-3">
                 Оплата и Доставка Товара</p>
-              <p className="text-white text-base font-semibold mt-3">
+              <p className="text-white text-base cursor-pointer font-semibold mt-3">
                 Бонусы и акции</p>
-              <p className="text-white text-base font-semibold mt-3">
+              <p className="text-white text-base cursor-pointer font-semibold mt-3">
                 Сервисные центры</p>
-              <h1 className="text-white text-base font-semibold mt-9">Контакты</h1>
-              <p className='text-white text-base font-semibold mt-3'>
+              <h1 className="text-white text-base cursor-pointer font-semibold mt-9">Контакты</h1>
+              <p className='text-white text-base cursor-pointer font-semibold mt-3'>
                 Info@olcha.uz</p>
             </div>
             <ul className="grid grid-cols-3 gap-x-6 gap-y-4 h-min mt-9">

@@ -5,7 +5,6 @@ import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 
 import { CartIcon, CheckIcon, ShareIcon, StarSolidIcon } from '../svg';
 import { numberWithCommas } from '../numberWithCommas';
-import SkeletonLoaderDetail from '../SkeletonLoaderDetail';
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/thumbs'
@@ -34,7 +33,6 @@ const ProductDetail = () => {
 
   }
   const goback = useNavigate()
-  const [loading, setLoding] = useState(true)
   // console.log(historys);
   const dispatch = useDispatch()
   const { id } = useParams()
@@ -44,14 +42,6 @@ const ProductDetail = () => {
     )
   })
 
-  useEffect(() => {
-
-    return () => {
-      setTimeout(() => {
-        setLoding(false)
-      }, 1000);
-    }
-  }, [])
   return (
     <div className='h-full min-h-[500px] animated-show'>
       {details.map(product => (
@@ -72,7 +62,7 @@ const ProductDetail = () => {
                 />
               </svg>
               <p className="hidden lg:block">Назад</p></button> {"/"}
-            <Link to={"/"} className="lg:px-4 px-2 text-lgcapitalize text-red-500">Главная</Link> {"/"}
+            <Link to={"/"} className="lg:px-4 px-2 text-lg capitalize text-red-500">Главная</Link> {"/"}
             <Link to={`/category/${product.category}`} className="capitalize lg:px-4 px-2 text-lg text-red-500">{product.category}</Link> {"/"}
             <Link to={`/manufacturer/${product.brandName}`} className="lg:px-4 capitalize px-[5px] text-lg text-red-500">{product.brandName}</Link>
           </div>

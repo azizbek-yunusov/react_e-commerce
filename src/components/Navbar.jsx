@@ -30,7 +30,7 @@ const Navbar = ({id, title, imgUrl, price}) => {
     <nav className={`w-full py-3 bg-gray-100 ${stickyClass} navbar-class  scroll-smooth`}>
       <div className="container-full lg:overflow-visible overflow-hidden flex items-center justify-between">
         <div className="flex items-center justify-between">
-          <Link className='lg:pr-11 pr-5' to="/">logo</Link>
+          <Link className='lg:pr-11 pr-2 text-red-600 font-bold lg:text-4xl text-xl' to="/">olma.uz</Link>
           <CatalogBtn />
         </div>
         <SearchInput />

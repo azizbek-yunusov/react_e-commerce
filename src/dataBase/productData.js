@@ -57,33 +57,35 @@ export const productData = [
     title: "Samsung Galaxy A13 Синий 4/64 GB",
     imgUrl: [
       "https://olcha.uz/image/200x200/products/8H4Y1PvwwZntgmdBwLliRimzAlSRcrQK0RUjX6FElNWxvu4S9NYJJTcLDhDS.jpeg",
-      "https://olcha.uz/image/200x200/products/8H4Y1PvwwZntgmdBwLliRimzAlSRcrQK0RUjX6FElNWxvu4S9NYJJTcLDhDS.jpeg",
-      "https://olcha.uz/image/200x200/products/8H4Y1PvwwZntgmdBwLliRimzAlSRcrQK0RUjX6FElNWxvu4S9NYJJTcLDhDS.jpeg",
-      "https://olcha.uz/image/200x200/products/8H4Y1PvwwZntgmdBwLliRimzAlSRcrQK0RUjX6FElNWxvu4S9NYJJTcLDhDS.jpeg",
+      "https://olcha.uz/image/425x425/products/8H4Y1PvwwZntgmdBwLliRimzAlSRcrQK0RUjX6FElNWxvu4S9NYJJTcLDhDS.jpeg",
+      "https://olcha.uz/image/425x425/products/QHsZ4WSzPUCPMgCWQnDtx4DLk7BJh2CzKwqUPr7Uk7ElP4lmlNdS1e2W01AH.jpeg",
+      "https://olcha.uz/image/425x425/products/YI8XrAKBntfH9QiqULDML4FbSJc4XMFV16sZCI07Lgk7yjvNxiVFKMCD43Qp.jpeg",
       "https://olcha.uz/image/425x425/products/ZX8z4N8ony2z4EDRov358u3P0M6vECn1QpGTXXgecgMu2AA9TrIkNvbrEZ3k.jpeg",
-      "https://olcha.uz/image/425x425/products/ZX8z4N8ony2z4EDRov358u3P0M6vECn1QpGTXXgecgMu2AA9TrIkNvbrEZ3k.jpeg"
+      "https://olcha.uz/image/425x425/products/6jaKaw1XtAQwYFgE8QDIbPkQE9inXqQBEtcOenMUnMXSw1JEuWlHdhHsgOrz.jpeg"
     ],
-    description: "Xiaomi kompaniyasining Redmi Note smartfonlari maxsus taqdimotga muhtoj emas. Chiziqning qurilmalari pul uchun yaxshi qiymat tufayli bir necha marta eng ko'p sotilgan bo'ldi. Bugun biz Redmi Note 11 ni ko'rib chiqamiz. Gadjetning yangi dizayni tekis ramka va minimalist uslubga ega. Redmi Note 11 90 Gts yangilanish tezligiga ega FullHD+ AMOLED displeyga ega. Eng yuqori yorqinligi 1000 nitsga etadi.", 
-    price: 2645000,
+    description: "Гарантийный срок (месяц): 12", 
+    price: 3447000,
     brandName: "Samsung",
-    brandImgUrl: "https://olcha.uz/uploads/images/manufacturer/KK/KK/Kp/1646038892.jpg",
-    category: "planshet",
+    brandImgUrl: "https://olcha.uz/uploads/images/manufacturer/KK/KK/Ko/1646038649.jpg",
+    category: "Смартфоны",
     group: "best"
   },
   {
     id: "samsung-galaxy-a13-chernyy-464-gb",
     title: "Galaxy A13 Черный 4/64 GB",
     imgUrl: [
-      "https://olcha.uz/image/200x200/products/QZFwvYXeNLbtnvf6bY1aR1bUZsyDzxyvOoLHMSj5AlKU3FwcQwTHacJb6BT3.",
-      "https://olcha.uz/image/425x425/products/QZFwvYXeNLbtnvf6bY1aR1bUZsyDzxyvOoLHMSj5AlKU3FwcQwTHacJb6BT3.",
-      "https://olcha.uz/image/425x425/products/B3JJUjRWluxD28cdRnDUYCQ5tuvrBx0XFIrBMBzTXmy7UP5uznpUiJPv1HP5.",
-      "https://olcha.uz/image/425x425/products/gInfeSe0xAmIyqgoMwHIiQ8cv9C07CU4zfYHGHTav8zVjYMK5EJXAhxnSPnP."
+      "https://olcha.uz/image/200x200/products/7y1iEq5QsOYSjhhPp5IOUTOq5sEu1BTHMgszYMcO2Ji0qWfwDDdNrBgooMB0.",
+      "https://olcha.uz/image/425x425/products/7y1iEq5QsOYSjhhPp5IOUTOq5sEu1BTHMgszYMcO2Ji0qWfwDDdNrBgooMB0.",
+      "https://olcha.uz/image/425x425/products/O1y3wwbxwRhTdePA2kjPzDZkigw3MvYg2hUi92A8oZuKIAuVt1gd9UsDYLzP.",
+      "https://olcha.uz/image/425x425/products/zDn2FGtJzgq7wK49qf0bGnwxBAWpKkujnbtEES7fjuuPLS2Rryj4fdGDiOEl.",
+      "https://olcha.uz/image/425x425/products/YkqFiRlh8BxylEJGLRrntCZPeHmTX9De1DmnW9jNO44DEJMxHaZanwu4omxw.",
+      "https://olcha.uz/image/425x425/products/a3clzswXUaas2iONzjOvRSFDW8KTvBwy8Wqz7Ne2tOYyW0XXWzz7zLmDD5zw."
     ],
-    description: "Благодаря 6,6-дюймовому экрану Infinity-V на смартфоне Galaxy A13 вы сможете увидеть всё, что было скрыто от вашего взгляда. Наслаждайтесь живым четким изображением с технологией FHD+. Galaxy A13 сочетает деликатные цвета и приятную на ощупь текстуру. Благодаря изящным изгибам его удобно держать при работе с экраном. Выберите цвет по вкусу: черный, белый, голубой или персиковый. Запечатлейте ценные моменты во всех деталях с основной камерой 50 Мп. Расширьте угол обзора с ультраширокоугольной камерой.", 
+    description: "Работайте на ноутбуке, смотрите фильмы и фотографии в режиме стенда, играйте в режиме планшета-палатки и пользуйтесь планшетом в дороге. Уникальное шарнирное крепление позволит моментально переключать компьютер в нужный режим по вашему желанию. Делайте покупки у нас легко и быстро. Мы отобрали для Вас только лучшее, поэтому больше Вам не придется бегать по магазинам и тратить кучу времени на поиски. Все что Вам нужно, есть у нас!", 
     price: 2260000,
-    brandName: "Samsung",
-    brandImgUrl: "https://olcha.uz/uploads/images/manufacturer/KK/KK/Ko/1646038649.jpg",
-    category: "Смартфоны",
+    brandName: "HP",
+    brandImgUrl: "https://olcha.uz/uploads/images/manufacturer/KK/KK/K6/1646039238.jpg",
+    category: "noutbook",
     group: "new",
   },
   {
@@ -99,7 +101,7 @@ export const productData = [
 
     ],
     description: "Его размеры 159.6 x 74.8 x 8.1 и вес 189 г. Он оснащен Super AMOLED-дисплеем с размером 6.5' дюйма. Разрешение составляет 1080 x 2400 пикселей, плотность пикселей 405 ppi. Для селфи и видеозвонков отвечает Одна предна камера с 32 MP. Для базовых фото и видео доступная Четверная задняя камера 64 MP. Процессор есть Octa-core (2x2.4 GHz Cortex-A78 & 6x2.0 GHz Cortex-A55). Емкость аккумулятора 5000 mAh.", 
-    price: 2645000,
+    price: 11357000 ,
     brandName: "samsung",
     brandImgUrl: "https://olcha.uz/uploads/images/image.pngmanufacturer/KK/KK/Kp/1646038892.jpg",
     category: "Смартфоны",
@@ -148,8 +150,8 @@ export const productData = [
     title: "Sony 55XE8596 4K UHD Smart",
     imgUrl: [
       "https://olcha.uz/image/200x200/products/lThSmKlHAEkRvxApYvI960V4Bij41cYPlyLKlyO7cvmQOtsPDnNCEfbhVQEm.PNG",
-      "https://olcha.uz/image/72x72/products/lThSmKlHAEkRvxApYvI960V4Bij41cYPlyLKlyO7cvmQOtsPDnNCEfbhVQEm.PNG",
-      "https://olcha.uz/image/72x72/products/fluyyKun1E9cSs3DFvBoqrPDZr5t3B9e7ZekrTnhAGWBlUIiOA0vRiYbG8iu.PNG",
+      "https://olcha.uz/image/425x425/products/lThSmKlHAEkRvxApYvI960V4Bij41cYPlyLKlyO7cvmQOtsPDnNCEfbhVQEm.PNG",
+      "https://olcha.uz/image/425x425/products/fluyyKun1E9cSs3DFvBoqrPDZr5t3B9e7ZekrTnhAGWBlUIiOA0vRiYbG8iu.PNG",
       "https://olcha.uz/image/425x425/products/LMt2Pqfpc6WgLiupb2BMgO0R5YkeLTF5WUForA7CHa96PdHSQG6FOPYVqVwK.PNG"
     ],
     description: "Почувствуйте реалистичность, которая поразит Ваш разум телевизор нового поколения от компании Sony! С идеальной красочной цветопередачей, расширенным динамическим диапазоном 4К и системой Android TV воплощение Ваших идей об идеальном телевизоре.", 
@@ -194,19 +196,20 @@ export const productData = [
     group: "new"
   },
   {
-    id: "samsung-gaaxy-a13-chernyy-464-gb",
-    title: "Galaxy A13 Черный 4/64 GB",
+    id: "planshet-huawei-matepad-11-6128gb",
+    title: "Huawei MatePad 11 6/128GB",
     imgUrl: [
-      "https://olcha.uz/image/200x200/products/QZFwvYXeNLbtnvf6bY1aR1bUZsyDzxyvOoLHMSj5AlKU3FwcQwTHacJb6BT3.",
-      "https://olcha.uz/image/425x425/products/QZFwvYXeNLbtnvf6bY1aR1bUZsyDzxyvOoLHMSj5AlKU3FwcQwTHacJb6BT3.",
-      "https://olcha.uz/image/425x425/products/B3JJUjRWluxD28cdRnDUYCQ5tuvrBx0XFIrBMBzTXmy7UP5uznpUiJPv1HP5.",
-      "https://olcha.uz/image/425x425/products/gInfeSe0xAmIyqgoMwHIiQ8cv9C07CU4zfYHGHTav8zVjYMK5EJXAhxnSPnP."
+      "https://olcha.uz/image/200x200/products/VnUbILkt1qaesIau4f4IxbrvsxqvAijk1Xzt0GKcEqo28k1pYtuCCcmB7sDl.",
+      "https://olcha.uz/image/425x425/products/VnUbILkt1qaesIau4f4IxbrvsxqvAijk1Xzt0GKcEqo28k1pYtuCCcmB7sDl.",
+      "https://olcha.uz/image/425x425/products/QtOm24Z1JP6b677HvQgVboSAWG1bbgp3o5nzEO27nZ3aVlV8OCChW8E15n3a.",
+      "https://olcha.uz/image/425x425/products/Ln5aqyekYGjIafUDd1vJrmmq5ynF2qr1UpCY3fWWjiRaKJrKIMvLeOHjrllE.",
+      "https://olcha.uz/image/425x425/products/hIpTI1pf0cMK9LbxC7qSp2q5I3ujBwkwQDisPvIfTNF9ZcnvVrtDqSpxNmqp."
     ],
-    description: "Благодаря 6,6-дюймовому экрану Infinity-V на смартфоне Galaxy A13 вы сможете увидеть всё, что было скрыто от вашего взгляда. Наслаждайтесь живым четким изображением с технологией FHD+. Galaxy A13 сочетает деликатные цвета и приятную на ощупь текстуру. Благодаря изящным изгибам его удобно держать при работе с экраном. Выберите цвет по вкусу: черный, белый, голубой или персиковый. Запечатлейте ценные моменты во всех деталях с основной камерой 50 Мп. Расширьте угол обзора с ультраширокоугольной камерой.", 
-    price: 2260000,
-    brandName: "Samsung",
-    brandImgUrl: "https://olcha.uz/uploads/images/manufacturer/KK/KK/Ko/1646038649.jpg",
-    category: "Смартфоны",
+    description: "Переосмысливая возможности и сценарии использования современного планшета, HUAWEI MatePad 11 имеет все необходимое для решения самых разнообразных рабочих задач благодаря подключению клавиатуры, мыши и стилуса. Оцените новый вид рабочего стола HUAWEI MatePad 11. Управляйте приложениями с помощью сенсорного экрана или мыши. Просматривайте списки часто и недавно использованных приложений, отображающиеся в нижней части экрана. Наводите мышь на значки приложений для предпросмотра, не открывая приложения.", 
+    price: 5199000,
+    brandName: "Huawei",
+    brandImgUrl: "https://olcha.uz/uploads/images/manufacturer/KK/KK/K2/1650948091.jpg",
+    category: "planshet",
     group: "new"
   },
   {
@@ -221,7 +224,7 @@ export const productData = [
     brandName: "Intel",
     brandImgUrl: "https://olcha.uz/uploads/images/manufacturer/KK/KK/KH/1628749328.png",
     category: " ",
-    group: "best"
+    group: "new"
   },
   {
     id: "samsung-galaxy-a13-chrnyy-464-gb",
@@ -261,7 +264,10 @@ export const productData = [
     id: "lg-49nano866-uhd-smarttv",
     title: "LG 49NANO866 UHD Smart TV",
     imgUrl: [
-      "https://olcha.uz/image/425x425/products/ECkLSD1KiQcvcDmRsCxgw3B7m1FHdevS6SRljeROX9cJe4SmMwAuGrB46NGS.jpeg"
+      "https://olcha.uz/image/425x425/products/ECkLSD1KiQcvcDmRsCxgw3B7m1FHdevS6SRljeROX9cJe4SmMwAuGrB46NGS.jpeg",
+      "https://olcha.uz/image/425x425/products/H6oJf4tGDDbzlHXkT5lEb1Ff9JaszHrhH10DWlSjttFUjRyox8tXrMu0qAdK.jpeg",
+      "https://olcha.uz/image/425x425/products/H5sHcwIKhbLxr7xJq0YudNlgsc1663osLJPhX0NCU07nuewH37x5ahoZs5jm.jpeg",
+      "https://olcha.uz/image/425x425/products/27EWKn0bXhsBo1PcUlIWAnOY7cNGO0XlSRRj1QtAdqdrxIt1wjXZPxXz9bda.jpeg"
     ],
     description: "Благодаря 6,6-дюймовому экрану Infinity-V на смартфоне Galaxy A13 вы сможете увидеть всё, что было скрыто от вашего взгляда. Наслаждайтесь живым четким изображением с технологией FHD+. Galaxy A13 сочетает деликатные цвета и приятную на ощупь текстуру. Благодаря изящным изгибам его удобно держать при работе с экраном. Выберите цвет по вкусу: черный, белый, голубой или персиковый. Запечатлейте ценные моменты во всех деталях с основной камерой 50 Мп. Расширьте угол обзора с ультраширокоугольной камерой.", 
     price: 2260000,
@@ -269,8 +275,6 @@ export const productData = [
     brandImgUrl: "https://olcha.uz/uploads/images/manufacturer/KK/KK/Ko/1646038649.jpg",
     category: "Телевизоры",
     group: "best",
-
-
   },
   {
     id: "acer-nitro-5-r7-5800h-16512gb-ssd-rtx3060-fhd-ips-156",

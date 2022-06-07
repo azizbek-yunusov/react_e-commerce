@@ -23,12 +23,26 @@
 .react-multi-carousel-dot {
   button {
     transform: scale(1.1);
-    border: 2px solid #00cb00;
+    border: 2px solid #000000;
   }
 }
 .react-multi-carousel-dot--active {
   button {
-    background-color: #00cb00;
+    background-color: #000000;
     transform: scale(1.1);
+  }
+}
+.offers {
+  .react-multi-carousel-dot {
+    button {
+      transform: scale(1.1);
+      border: 2px solid #ffb700;
+    }
+  }
+  .react-multi-carousel-dot--active {
+    button {
+      background-color: #ffc800;
+      transform: scale(1.1);
+    }
   }
 }

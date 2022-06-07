@@ -15,7 +15,7 @@ const BannerCarousel = () => {
 
 
   return (
-    <div className="-z-10">
+    <div className="-z-10 PageAnimated">
       <Carousel
         showDots={true}
         autoPlay={true}

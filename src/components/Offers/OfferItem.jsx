@@ -2,7 +2,7 @@ import React from 'react'
 
 const OfferItem = ({id, name, title, imgUrl}) => {
   return (
-    <div className="cursor-pointer rounded-lg mt-5 p-5 mx-1 flex flex-col items-center text-center border border-yellow-300 lg:max-w-none max-w-xl w-full">
+    <div className="selection:inset-0 cursor-pointer lg:mx-5 my-5 rounded-lg mt-5 p-5 mx-1 flex flex-col items-center text-center border border-yellow-300 lg:max-w-none max-w-xl min-h-[200px]">
       <div className="p-4 bg-slate-100 rounded-full">
         <img src={imgUrl} alt={name} />
       </div>

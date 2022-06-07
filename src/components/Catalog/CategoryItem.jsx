@@ -18,8 +18,8 @@ const CategoryItem = ({id, title, price, imgUrl}) => {
     setAnimtedHeart(!animtedHeart)
   }
   return (
-    <div className="lg:mx-3 mx-1 selection:inset-0 lg:my-4 my-1 hover:rounded-xl lg:hover:shadow-2xl active:shadow-lg  border border-gray-2  00 rounded-xl hover:border-white ease-linear duration-200">
-      <div className="relative flex flex-col pt-1 px-3 pb-3">
+    <div className="lg:mx-3 mx-[2px] selection:inset-0 lg:my-4 my-1 hover:rounded-xl lg:hover:shadow-2xl active:shadow-lg  border border-gray-2  00 rounded-xl hover:border-white ease-linear duration-200">
+      <div className="relative h-full flex flex-col justify-between pt-1 px-3 pb-3">
         <div className="absolute top-0 right-0 p-2 cursor-pointer">
             {!showHeart ? <div onMouseEnter={toggleHovered} onMouseLeave={toggleHovered} onClick={handleHeart} className={animtedHeart ? "animtedHeart text-red-600" : " text-red-600"}>{HeartRegIcon} </div> : <div onClick={handleHeart} className="">{HeartSolIcon} </div> }
         </div>

@@ -39,7 +39,6 @@ const reducer = (state = initialState, {type, payload}) => {
       return {
         ...state,
         order: newOrder,
-        isShowToastify: true
         // isGoBasketShow: !state.isGoBasketShow
       }
     case "TOGGLE_BASKET_SHOW":

@@ -9,6 +9,7 @@ import "./assets/styles/swipperStyles.css"
 
 import './index.css';
 import "./assets/styles/main.css"
+import "./assets/styles/main.scss"
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

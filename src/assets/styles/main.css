@@ -218,14 +218,11 @@ figure {
   }
 }
 .emptyAnimated {
-  animation: empty .7s ease-in alternate;
+  animation: empty .5s ease-in alternate;
 }
 @keyframes empty {
   0% {
     transform: translateY(-100%);
-  }
-  66% {
-    transform: translateY(30%);
   }
   100% {
     transform: translateY(0);
