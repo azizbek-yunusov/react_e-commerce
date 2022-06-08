@@ -7,7 +7,9 @@ const initialState = {
   isShowToastify: false,
   // isGoBasketShow: false,
   isFavoritesShow: false,
-  isSideBarShow: false
+  isSideBarShow: false,
+  isSignInShow: false,
+  isSignUpShow: false
 }
 
 const reducer = (state = initialState, {type, payload}) => {
@@ -97,10 +99,22 @@ const reducer = (state = initialState, {type, payload}) => {
         isShowToastify: !state.isShowToastify
       }
     }
-    case "TOGGlE_SIDEBAR_SHOW" : 
+    case "TOGGLE_SIDEBAR_SHOW" : 
     return {
       ...state,
       isSideBarShow: !state.isSideBarShow
+    }
+    case "TOGGLE_SIGNIN_SHOW" : {
+      return {
+        ...state,
+        isSignInShow: !state.isSignInShow
+      }
+    }
+    case "TOGGLE_SIGNUP_SHOW" : {
+      return {
+        ...state,
+        isSignInShow: !state.isSignInShow
+      }
     }
     default:
       return state

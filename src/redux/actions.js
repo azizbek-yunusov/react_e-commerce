@@ -38,10 +38,20 @@ export const closeToastify = () => {
 }
 export const handleSideBar  = () => {
   return {
-    type: "TOGGlE_SIDEBAR_SHOW"
+    type: "TOGGLE_SIDEBAR_SHOW"
   }
 }
 
+export const handleSignIn  = () => {
+  return {
+    type: "TOGGLE_SIGNIN_SHOW"
+  }
+}
+export const handleSignUp  = () => {
+  return {
+    type: "TOGGLE_SIGNUP_SHOW"
+  }
+}
 
 
 

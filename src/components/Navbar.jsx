@@ -5,12 +5,13 @@ import Cart from './Cart'
 import { useDispatch, useSelector } from 'react-redux'
 import SearchInput from './SearchInput'
 import CatalogBtn from './Catalog/CatalogBtn'
-import UserBtn from './UserBtn'
+import UserBtn from './User/UserBtn'
 import SideBarCatalog from './Catalog/SideBarCatalog'
 import { handleSideBar } from '../redux/actions'
+import SignIn from './User/SignIn'
 
 const Navbar = ({id, title, imgUrl, price}) => {
-  const { order, isBasketShow, isSideBarShow } = useSelector(state => state)
+  const { order, isBasketShow, isSideBarShow, isSignInShow } = useSelector(state => state)
   const [stickyClass, setStickyClass] = useState('relative');
   const dispatch = useDispatch()
   useEffect(() => {
@@ -46,6 +47,7 @@ const Navbar = ({id, title, imgUrl, price}) => {
           {isBasketShow && <BasketList id={id} title={title} imgUrl={imgUrl} price={price} />}
       </div>
       {isSideBarShow && <SideBarCatalog />}
+      {isSignInShow && <SignIn />}
     </nav>
   )
 }

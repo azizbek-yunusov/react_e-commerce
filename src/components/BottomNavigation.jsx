@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { handleSideBar } from '../redux/actions'
+import { handleSideBar, handleSignIn } from '../redux/actions'
 import Cart from './Cart'
 import { HomeIcon, UserIcon } from './svg'
 
@@ -15,7 +15,7 @@ const BottomNavigation = () => {
           <svg className="h-8 w-8 text-zinc-800"  width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="4" y="4" width="6" height="6" rx="1" />  <rect x="14" y="4" width="6" height="6" rx="1" />  <rect x="4" y="14" width="6" height="6" rx="1" />  <rect x="14" y="14" width="6" height="6" rx="1" /></svg>
         </div>
         <Cart />
-        <div className='p-2 rounded-full text-zinc-800'>{UserIcon}</div>
+        <div onClick={() => dispatch(handleSignIn())} className='p-2 rounded-full text-zinc-800'>{UserIcon}</div>
       </div>
     </div>
   )

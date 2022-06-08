@@ -269,7 +269,7 @@ figure {
   }
 }
 .BasketAnimated {
-  animation: BasketAnimated .4s ease-in-out;
+  animation: BasketAnimated .3s ease-in-out;
 }
 @keyframes BasketAnimated {
   0% {
