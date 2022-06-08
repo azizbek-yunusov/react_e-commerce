@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useRef } from 'react'
-import Zoom from 'react-img-zoom';
+import React, { useEffect, useState } from 'react'
+// import Zoom from 'react-img-zoom';
 import { useDispatch } from 'react-redux';
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 
@@ -14,7 +14,6 @@ import { addToBasket } from '../../redux/actions';
 
 const ProductDetail = () => {
   const [selectedImg, setSelectedImg] = useState(1)
-  const imgDiv = useRef();
   const [copyUrl, setCopyUrl] = useState(false)
   // scroll to top
   const location = useLocation();
@@ -84,7 +83,7 @@ const ProductDetail = () => {
 
           <div className="lg:grid grid-cols-1 lg:grid-cols-3  lg:gap-6 border-t border-r-gray-400 lg:py-5 py-4">
             <div className="">
-              <div className="border flex items-center justify-center lg:my-2 border-gray-200 hover:border-zinc-300 ease-in duration-200">
+              <div className="border flex items-center justify-center lg:my-2 lg:rounded-lg border-gray-200 hover:border-zinc-300 ease-in duration-200">
                 {/* <Zoom
                   ref={imgDiv}
                   img={product.imgUrl[selectedImg]}
@@ -135,27 +134,20 @@ const ProductDetail = () => {
                 />
               </Link>
               <p className="text-2xl lg:m-0 mt-2 font-medium">{numberWithCommas(product.price)}{" "}cум</p>
-              <button onClick={() => dispatch(addToBasket(product))} className='mt-5 text-2xl font-normal rounded-lg flex items-center justify-center lg:py-4 py-3 w-full bg-yellow-400 active:opacity-40 transition-opacity'>
+              <button onClick={() => dispatch(addToBasket(product))} className='mt-5 text-2xl font-normal rounded-lg flex items-center justify-center lg:py-4 py-3 w-full bg-yellow-400 active:opacity-80 transition-opacity'>
                 {CartIcon} {" "} {" "}
                 <p className="ml-3 font-semibold">в корзину</p>
               </button>
-              <div className="lg:py-2 py-1 font-normal flex justify-center bg-gray-200 rounded-lg lg:mt-5 text-zinc-800">
-              Рассрочка от <p className="font-semibold lg:ml-[5px]">{numberWithCommas(Math.floor(product.price/24))} cум / 24 мес.</p> 
+              <div className="lg:py-2 py-1 font-normal flex justify-center bg-gray-200 rounded-lg lg:my-4 text-zinc-800 my-3">
+                Рассрочка от <p className="font-semibold lg:ml-[5px]">{numberWithCommas(Math.floor(product.price/24))} cум / 24 мес.</p> 
               </div>
-              <button className="lg:mt-5 text-xl font-normal rounded-lg flex items-center justify-center lg:py-4 py-3 w-full bg-zinc-700 active:opacity-40 transition-opacity text-white">
+              <button className="text-xl font-normal rounded-lg flex items-center justify-center lg:py-4 py-3 w-full bg-zinc-700 active:opacity-80 transition-opacity text-white">
                 Купить в рассрочку
               </button>
             </div>
           </div>
         </div>
       ))}
-      {/* <div className="lg:hidden fixed flex justify-between">
-        <p className="text-3xl lg:font-medium font-semibold mt-2 lg:mt-0">{numberWithCommas(product.price)}{" "}cум </p>
-        <button onClick={() => dispatch(addToBasket(product.imgUrl))} className='mt-6 text-2xl font-normal rounded-lg flex items-center justify-center lg:py-4 py-3 w-full bg-yellow-400'>
-                {CartIcon} {" "} {" "}
-                <p className="ml-3 font-semibold">в корзину</p>
-              </button>
-      </div> */}
     </div>
   )
 }

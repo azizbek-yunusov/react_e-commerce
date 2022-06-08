@@ -15,7 +15,7 @@ const ProductCard = ({id, title, price, imgUrl, groupName, classes, group}) => {
     setAnimtedHeart(!animtedHeart)
   }
   return (
-    <div className="lg:mx-3 mx-[3px] selection:inset-0 lg:border-0 rounded-2xl border border-gray-100 mt-4 hover:rounded-xl lg:hover:shadow-xl ease-linear opacityAnimeted">
+    <div className="lg:mx-3 mx-1 selection:inset-0 lg:border-0 lg:rounded-2xl rounded-xl border border-gray-100 mt-4 hover:rounded-xl lg:hover:shadow-xl ease-linear opacityAnimeted">
       <div className="relative flex justify-between h-full flex-col pt-1 px-3 pb-3">
         <div className="absolute top-0 right-0 p-2 cursor-pointer">
             {!showHeart ? <div onMouseEnter={toggleHovered} onMouseLeave={toggleHovered} onClick={handleHeart} className={animtedHeart ? "animtedHeart text-red-600" : " text-red-600"}>{HeartRegIcon} </div> : <div onClick={handleHeart} className="">{HeartSolIcon} </div> }
