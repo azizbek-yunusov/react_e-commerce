@@ -33,14 +33,14 @@ var settings = {
 
 const Offer = () => {
   return (
-    <div className="container-full lg:my-8 my-4 offers PageAnimated">
-      <h1 className="text-2xl font-semibold text-center text-zinc-800">Телефоны и бытовая техника в рассрочку</h1>
+    <div className="container-full lg:my-8 my-5 offers PageAnimated">
+      <h1 className="lg:text-2xl text-xl font-semibold text-center text-zinc-800">Телефоны и бытовая техника в рассрочку</h1>
         <Carousel 
         {...settings}
         shouldResetAutoplay={false} 
         customLeftArrow={customLeftArrowPro}
         customRightArrow={customRightArrowPro}
-        itemClass="my-2"
+        itemClass="lg:my-2 my-0"
         showDots={true}
         infinite={true} >
         {offers.map(item => (

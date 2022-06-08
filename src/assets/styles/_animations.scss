@@ -10,7 +10,7 @@
   }
 }
 .emptyAnimated {
-  animation: empty .5s ease-in alternate;
+  animation: empty .4s ease-in alternate;
 }
 @keyframes empty {
   0% {
@@ -19,6 +19,29 @@
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+.sideAnimated {
+  animation: sideAnimated .4s ease-in-out;
+}
+@keyframes sideAnimated {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.opasityAnimated {
+  animation: opasityAnimated .4s ease-in-out;
+  background: rgba(0, 0, 0, 0.42);
+}
+@keyframes opasityAnimated {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }

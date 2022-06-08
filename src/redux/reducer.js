@@ -6,7 +6,8 @@ const initialState = {
   isBasketShow: false,
   isShowToastify: false,
   // isGoBasketShow: false,
-  isFavoritesShow: false
+  isFavoritesShow: false,
+  isSideBarShow: false
 }
 
 const reducer = (state = initialState, {type, payload}) => {
@@ -95,6 +96,11 @@ const reducer = (state = initialState, {type, payload}) => {
         ...state,
         isShowToastify: !state.isShowToastify
       }
+    }
+    case "TOGGlE_SIDEBAR_SHOW" : 
+    return {
+      ...state,
+      isSideBarShow: !state.isSideBarShow
     }
     default:
       return state

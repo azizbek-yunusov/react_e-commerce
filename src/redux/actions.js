@@ -36,7 +36,11 @@ export const closeToastify = () => {
     type: "CLOSE_TOASTIFY"
   }
 }
-
+export const handleSideBar  = () => {
+  return {
+    type: "TOGGlE_SIDEBAR_SHOW"
+  }
+}
 
 
 

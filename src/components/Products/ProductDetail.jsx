@@ -62,9 +62,9 @@ const ProductDetail = () => {
                 />
               </svg>
               <p className="hidden lg:block">Назад</p></button> {"/"}
-            <Link to={"/"} className="lg:px-4 px-2 text-lg capitalize text-red-500">Главная</Link> {"/"}
-            <Link to={`/category/${product.category}`} className="capitalize lg:px-4 px-2 text-lg text-red-500">{product.category}</Link> {"/"}
-            <Link to={`/manufacturer/${product.brandName}`} className="lg:px-4 capitalize px-[5px] text-lg text-red-500">{product.brandName}</Link>
+            <Link to={"/"} className="lg:px-4 px-2 lg:text-lg text-base capitalize text-red-500">Главная</Link> {"/"}
+            <Link to={`/category/${product.category}`} className="capitalize lg:px-4 px-2 lg:text-lg text-base text-red-500">{product.category}</Link> {"/"}
+            <Link to={`/manufacturer/${product.brandName}`} className="lg:px-4 capitalize px-[5px] lg:text-lg text-base text-red-500">{product.brandName}</Link>
           </div>
 
           <h1 className="lg:text-3xl text-xl px-2 font-normal text-zinc-700 mb-3">{product.category}{" "}{product.title}</h1>
@@ -82,9 +82,9 @@ const ProductDetail = () => {
             </div>
           </div>
 
-          <div className="lg:grid grid-cols-1 lg:grid-cols-3  lg:gap-6 border-t border-r-gray-400 lg:py-8 py-5">
+          <div className="lg:grid grid-cols-1 lg:grid-cols-3  lg:gap-6 border-t border-r-gray-400 lg:py-5 py-4">
             <div className="">
-              <div className="border flex items-center justify-center lg:mt-2 border-gray-100 hover:border-zinc-300 ease-in duration-200">
+              <div className="border flex items-center justify-center lg:my-2 border-gray-200 hover:border-zinc-300 ease-in duration-200">
                 {/* <Zoom
                   ref={imgDiv}
                   img={product.imgUrl[selectedImg]}
@@ -135,9 +135,15 @@ const ProductDetail = () => {
                 />
               </Link>
               <p className="text-2xl lg:m-0 mt-2 font-medium">{numberWithCommas(product.price)}{" "}cум</p>
-              <button onClick={() => dispatch(addToBasket(product))} className='mt-5 text-2xl font-normal rounded-lg flex items-center justify-center lg:py-4 py-3 w-full bg-yellow-400'>
+              <button onClick={() => dispatch(addToBasket(product))} className='mt-5 text-2xl font-normal rounded-lg flex items-center justify-center lg:py-4 py-3 w-full bg-yellow-400 active:opacity-40 transition-opacity'>
                 {CartIcon} {" "} {" "}
                 <p className="ml-3 font-semibold">в корзину</p>
+              </button>
+              <div className="lg:py-2 py-1 font-normal flex justify-center bg-gray-200 rounded-lg lg:mt-5 text-zinc-800">
+              Рассрочка от <p className="font-semibold lg:ml-[5px]">{numberWithCommas(Math.floor(product.price/24))} cум / 24 мес.</p> 
+              </div>
+              <button className="lg:mt-5 text-xl font-normal rounded-lg flex items-center justify-center lg:py-4 py-3 w-full bg-zinc-700 active:opacity-40 transition-opacity text-white">
+                Купить в рассрочку
               </button>
             </div>
           </div>

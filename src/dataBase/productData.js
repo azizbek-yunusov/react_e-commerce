@@ -41,7 +41,6 @@ export const productData = [
       "https://olcha.uz/image/425x425/products/KoZYtM0aOZ6wkAKGVD1F9pMT6gAO5LTnye7osrWCGGxdEZzyeOgkihWZnTph.jpeg",
       "https://olcha.uz/image/425x425/products/1HUrA1KGli1IZMmasvzeNT00kUAcrW6i0CqCGRwVU7AGmvslCY4YaYjwRkQp.jpeg",
       "https://olcha.uz/image/425x425/products/tN6DyQJFUtsfbIB2hACXDrcAqmY6nlwT8SwFX9OSnGsIaec5pMsJHfkUGRbJ.jpeg",
-      "https://olcha.uz/image/425x425/products/tN6DyQJFUtsfbIB2hACXDrcAqmY6nlwT8SwFX9OSnGsIaec5pMsJHfkUGRbJ.jpeg",
       "https://olcha.uz/image/425x425/products/O0y3SGVzSCd6cyLB3pM5hIHYtKdhYqaScx1foT1yzUdSbthYrrGh7wQ4kVag.jpeg"
       
     ],
@@ -71,8 +70,8 @@ export const productData = [
     group: "best"
   },
   {
-    id: "samsung-galaxy-a13-chernyy-464-gb",
-    title: "Galaxy A13 Черный 4/64 GB",
+    id: "noutbuk-hp-envy-x360-13m-bd1033dx-i7-1195g7-8512gb-ssd-133",
+    title: "HP Envy x360 13m-bd1033dx i7-1195G7 8/512GB SSD 13.3'",
     imgUrl: [
       "https://olcha.uz/image/200x200/products/7y1iEq5QsOYSjhhPp5IOUTOq5sEu1BTHMgszYMcO2Ji0qWfwDDdNrBgooMB0.",
       "https://olcha.uz/image/425x425/products/7y1iEq5QsOYSjhhPp5IOUTOq5sEu1BTHMgszYMcO2Ji0qWfwDDdNrBgooMB0.",
@@ -82,7 +81,7 @@ export const productData = [
       "https://olcha.uz/image/425x425/products/a3clzswXUaas2iONzjOvRSFDW8KTvBwy8Wqz7Ne2tOYyW0XXWzz7zLmDD5zw."
     ],
     description: "Работайте на ноутбуке, смотрите фильмы и фотографии в режиме стенда, играйте в режиме планшета-палатки и пользуйтесь планшетом в дороге. Уникальное шарнирное крепление позволит моментально переключать компьютер в нужный режим по вашему желанию. Делайте покупки у нас легко и быстро. Мы отобрали для Вас только лучшее, поэтому больше Вам не придется бегать по магазинам и тратить кучу времени на поиски. Все что Вам нужно, есть у нас!", 
-    price: 2260000,
+    price: 11357000,
     brandName: "HP",
     brandImgUrl: "https://olcha.uz/uploads/images/manufacturer/KK/KK/K6/1646039238.jpg",
     category: "noutbook",
@@ -94,16 +93,16 @@ export const productData = [
     imgUrl: [
       "https://olcha.uz/image/200x200/products/iNgZpAO3hwqvXycnNPZh9JrdvKtsdAttiMQ5pvW1A6zVVEQVjH1WlzS5Zisf.jpeg",
       "https://olcha.uz/image/425x425/products/iNgZpAO3hwqvXycnNPZh9JrdvKtsdAttiMQ5pvW1A6zVVEQVjH1WlzS5Zisf.jpeg",
-      "https://olcha.uz/image/425x425/products/PHIMm1dk6nbDUGMmVa5k3NZYmursLdWQuM59K4UI7QD20EdKNPhFKAwbh3m9.jpeg",
       "https://olcha.uz/image/425x425/products/187aAf7ziF0bZ3KLULLndjo1ROvwKDfvxya3LJhqKVrb0P4kobe2diEVYduS.jpeg",
-      "https://olcha.uz/image/425x425/products/187aAf7ziF0bZ3KLULLndjo1ROvwKDfvxya3LJhqKVrb0P4kobe2diEVYduS.jpeg",
-      "https://olcha.uz/image/425x425/products/187aAf7ziF0bZ3KLULLndjo1ROvwKDfvxya3LJhqKVrb0P4kobe2diEVYduS.jpeg"
+      "https://olcha.uz/image/425x425/products/okVaL042FsfYBH5bXYdrb6UDVb4KrWyzuRhUq70Qf50uOuupQHbVd2BirkcM.jpeg",
+      "https://olcha.uz/image/425x425/products/rcSOh9Jcl3jhL23V6xK9i4Z6eUiiekGr2NPzu3Lx7BfSqA06vZzaiMqNW4ms.jpeg",
+      "https://olcha.uz/image/425x425/products/NbYpVWIC4fCnCbgWxGSeM1x3aiqC0BKU55JphEk9tbey9Idtyt6go52PPCQt.jpeg"
 
     ],
     description: "Его размеры 159.6 x 74.8 x 8.1 и вес 189 г. Он оснащен Super AMOLED-дисплеем с размером 6.5' дюйма. Разрешение составляет 1080 x 2400 пикселей, плотность пикселей 405 ppi. Для селфи и видеозвонков отвечает Одна предна камера с 32 MP. Для базовых фото и видео доступная Четверная задняя камера 64 MP. Процессор есть Octa-core (2x2.4 GHz Cortex-A78 & 6x2.0 GHz Cortex-A55). Емкость аккумулятора 5000 mAh.", 
     price: 11357000 ,
     brandName: "samsung",
-    brandImgUrl: "https://olcha.uz/uploads/images/image.pngmanufacturer/KK/KK/Kp/1646038892.jpg",
+    brandImgUrl: "https://olcha.uz/uploads/images/manufacturer/KK/KK/Ko/1646038649.jpg",
     category: "Смартфоны",
     pathname: "smartfon-samsung-galaxy-a32-6-gb-128gb-chernyy",
     group: "new"
@@ -163,7 +162,7 @@ export const productData = [
   },
   {
     id: "noutbuk-dell-xps-15-9500-core-i5-10300h-8gb512gb-ssd-156-n097xps9500uz-wh",
-    title: "Dell XPS 15 (9500) Core i5-10300H 8GB/512GB SSD 15.6' (N097XPS9500UZWH) ",
+    title: "Dell XPS 15 (9500) Core i5-10300H 8GB/512GB SSD 15.6'",
     imgUrl: [
       "https://olcha.uz/image/200x200/products/KDQLxHNC40KwD5XjmHDbs6H9JfNOAerIkDQSHMln7XEf4qkpAj04xiwCZTtg.jpeg",
       "https://olcha.uz/image/425x425/products/KDQLxHNC40KwD5XjmHDbs6H9JfNOAerIkDQSHMln7XEf4qkpAj04xiwCZTtg.jpeg",

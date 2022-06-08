@@ -59,10 +59,10 @@ const SearchInput = () => {
   }
   return (
     <div className='relative'>
-      <form onClick={toggleMobileSearchBar} onSubmit={submitAction} className="flex items-center border-2 border-yellow-400 justify-between rounded-lg bg-white" >
+      <form onClick={toggleMobileSearchBar} onSubmit={submitAction} className="flex items-center border-2 border-yellow-400 justify-between rounded-lg bg-white max-h-12 lg:w-auto w-full" >
         <input type="text"
           // onClick={showSearchPage()}
-          className='lg:w-[550px] px-4 rounded-2xl bg-none'
+          className='lg:w-[550px] w-full px-4 rounded-2xl bg-none'
           placeholder='Поиск товаров'
           value={term}
           onChange={handleAutoComplete}
@@ -70,7 +70,7 @@ const SearchInput = () => {
           <button
           // onClick={handleSubmit}
             type='submit'
-            className='lg:py-2 py-[4px] lg:px-5 px-2 mt-0 lg:mb-[0px] lg:mt-[1px] rounded-r-md bg-yellow-400'
+            className='lg:py-2 py-[4px] lg:px-5 px-2 rounded-r-md bg-yellow-400'
           >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />

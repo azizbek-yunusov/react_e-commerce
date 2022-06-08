@@ -25,7 +25,6 @@ const responsive = {
   }
 }
 const ProductsList = ({id, groupName, group}) => {
-  console.log(group);
   // const { popular } = useParams()
   const groupFilter = productData.filter((item, index) => {
     return item.group === group
