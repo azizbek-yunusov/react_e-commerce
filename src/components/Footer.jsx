@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="grid lg:grid-cols-4 grid-cols-1 lg:gap-10">
             <div className="grid grid-cols-2 gap-5">
               <div className="block text-white">
-                <Link to={"/"} className='text-red-600 font-bold lg:text-4xl'>olma.uz</Link>
+                <Link to={"/"} className='text-red-600 font-bold lg:text-4xl text-2xl'>olma.uz</Link>
                 <div className="block w-full">
                   <p className='text-white text-sm mt-5'>Телефон поддержки</p>
                   <p className='text-white text mt-2 font-medium'>+998 (94) 554 55 94</p>

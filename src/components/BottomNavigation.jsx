@@ -8,7 +8,7 @@ import { HomeIcon, UserIcon } from './svg'
 const BottomNavigation = () => {
   const dispatch = useDispatch()
   return (
-    <div className="md:hidden block w-full rounded-t-[30px]  bg-gray-100 fixed left-0 bottom-0 shadow-xl">
+    <div className="md:hidden block w-full rounded-t-[30px]  bg-gray-200 fixed left-0 bottom-0 shadow-xl">
       <div className="container-full flex items-center justify-between px-8 py-3">
         <Link to={"/"} className='p-2 rounded-full text-zinc-800 bottom-1 align-middle border-gray-500'>{HomeIcon}</Link>
         <div onClick={() => dispatch(handleSideBar())} className='p-2 rounded-full align-middle'>

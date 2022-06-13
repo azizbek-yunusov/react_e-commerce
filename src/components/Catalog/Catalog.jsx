@@ -31,12 +31,12 @@ var settings = {
     
 const Catalog = () => {
   return (
-    <div className="container-full lg:my-6 my-4 PageAnimated">
+    <div className="container-full lg:my-5 my-0 PageAnimated">
       <Carousel 
         {...settings}
         shouldResetAutoplay={false} 
         autoPlay={true}
-        autoPlaySpeed={3000}
+        autoPlaySpeed={5000}
         infinite
         customLeftArrow={customLeftArrowPro}
         customRightArrow={customRightArrowPro} >

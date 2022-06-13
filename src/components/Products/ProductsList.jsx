@@ -40,7 +40,7 @@ const ProductsList = ({id, groupName, group}) => {
     <div className="container-full lg:my-5">
       <div className="flex justify-between w-full items-center">
         <h1 className="text-2xl text-zinc-700 font-medium">{groupName}</h1>
-        <Link className='text-blue-500 normal-case flex font-semibold bestAnime' to={`/product/${group}`}>
+        <Link className='text-blue-500 normal-case flex font-semibold' to={`/product/${group}`}>
         Смотреть все {" "}
           <svg xmlns="http://www.w3.org/2000/svg" className=" h-6 w-6 pt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />

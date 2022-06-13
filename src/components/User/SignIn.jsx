@@ -15,7 +15,7 @@ const SignIn = () => {
     }
   })
   return (
-    <div className="w-full flex justify-center items-center min-h-screen fixed inset-0 z-[1001]">
+    <div className="w-full flex justify-center items-center min-h-screen fixed inset-0 z-[1001] lg:bg-transparent bg-white">
       <div onClick={() => dispatch(handleSignIn())} className="bg-[#0000008f] w-screen min-h-screen fixed inset-0 backdrop-blur-[1px]"></div>
 
       <div className="BasketAnimated fixed lg:w-[500px] py-8 w-full lg:h-auto h-full lg:rounded-xl flex justify-center flex-col items-center bg-white">
@@ -38,7 +38,7 @@ const SignIn = () => {
           <div className="lg:flex lg:justify-between block lg:px-8">
 
             <button type="submit" className="text-white bg-blue-700  hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg lg:text-sm text-lg w-full sm:w-auto px-8 py-2.5 text-center">Submit</button>
-            <p onClick={() => dispatch(handleSignUp())} className='cursor-pointer lg:text-lg lg:mt-0 mt-4 text-blue-600 font-medium'>зарегистрироваться</p>
+            <div onClick={() => dispatch(handleSignUp())} className='cursor-pointer lg:text-lg lg:mt-0 mt-4 text-blue-600 font-medium'>зарегистрироваться</div>
           </div>
 
           <div onClick={() => dispatch(handleSignIn())} className="cursor-pointer absolute top-2 m-1 rounded-full right-2 p-1 border border-gray-200">

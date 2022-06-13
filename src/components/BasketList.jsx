@@ -26,8 +26,8 @@ const BasketList = () => {
       <div className="BasketAnimated w-full flex items-center justify-center z-50 h-full"> 
         <div className="relative rounded-none lg:min-w-[850px] min-w-full lg:rounded-md flex flex-col h-full justify-start lg:my-16 lg:min-h-full mt-0 z-50 bg-white overflow-hidden">
           <div className="overflow-hidden w-full bg-yellow-400 lg:py-5 py-3 px-4 lg:px-5 flex lg:items-center items-start justify-between">
-            <h1 className="text-lg font-semibold text-zinc-700">Купить сейчас</h1>
-            <div onClick={() => dispatch(handeleBasketShow())} className="close cursor-pointer p-1 border text-zinc-500 border-zinc-400 rounded-full">{CloseIcon}</div>
+            <h1 className="text-lg font-semibold text-zinc-800">Купить сейчас</h1>
+            <div onClick={() => dispatch(handeleBasketShow())} className="close cursor-pointer p-1 border text-zinc-600 border-zinc-600 rounded-full">{CloseIcon}</div>
           </div>
           <ul className="overflow-y-scroll lg:max-h-[500px] h-full  px-4">
             {order.length ? order.map(item => {

@@ -8,7 +8,7 @@ import { MinusIcon, PlusIcon, TrashIcon } from './svg'
 const BasketListItem = ({ id, title, imgUrl, quantity, price }) => {
   const dispatch = useDispatch()
   return (
-    <li className="flex py-4 ease-in-out duration-300 lg:justify-between border-b border-b-gray-200">
+    <li className="flex lg:py-4 py-3 ease-in-out duration-300 lg:justify-between border-b border-b-gray-200">
       <Link to={`/product/detail/${id}`} onClick={() => dispatch(handeleBasketShow())} className="lg:h-32 lg:w-32 w-24 h-24 overflow-hidden rounded-md">
         <img src={imgUrl[0]} alt={title} className="h-full w-full object-cover object-center" />
       </Link>

@@ -20,7 +20,7 @@ const ProductCard = ({id, title, price, imgUrl, groupName, classes, group}) => {
         <div className="absolute top-0 right-0 p-2 cursor-pointer">
             {!showHeart ? <div onMouseEnter={toggleHovered} onMouseLeave={toggleHovered} onClick={handleHeart} className={animtedHeart ? "animtedHeart text-red-600" : " text-red-600"}>{HeartRegIcon} </div> : <div onClick={handleHeart} className="">{HeartSolIcon} </div> }
         </div>
-        <div className="absolute top-0 ml-3 mt-2 left-0 text-yellow-500 rounded-md px-3 py-[2px] pb-[4px] bg-zinc-800 font-semibold text-xs" >{group}</div>
+        <div className="absolute top-0 ml-3 mt-2 left-0 text-yellow-500 lg:rounded-md rounded px-3 py-[2px] pb-[4px] bg-zinc-800 font-semibold text-xs" >{group}</div>
         {/* <div className="absolute top-12 right-0 p-2 cursor-pointer">
             {!copyUrl ? <div onClick={copy} className="">{BackIcon} </div> : <div className="">"copy"</div> }
         </div> */}
