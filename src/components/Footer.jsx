@@ -1,23 +1,35 @@
-import { Warning } from 'postcss'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 // import AppStoreIMG from '../assets/img/AppStore.png'
 import MessegeButton from './MessegeButton'
+import Modal from './Modal'
 import TopButton from './TopButton'
 import WarningToastify from './WarningToastify'
 
 const Footer = () => {
+  const [showModal, setShowModal] = useState(true)
+  useEffect(() => {
+
+    setInterval(() => {
+      setShowModal(!showModal)
+      
+    }, 5000);
+    return () => {
+      clearInterval(setShowModal(!showModal))
+    }
+  }, [])
   return (
     <div className="bg-zinc-800 pt-5 overflow-hidden">
       <div className="container-full lg:py-9 py-0">
         <WarningToastify />
         <MessegeButton />
         <TopButton />
+        {showModal && <Modal />}
         <div className="socials">
           <div className="grid lg:grid-cols-4 grid-cols-1 lg:gap-10">
             <div className="grid grid-cols-2 gap-5">
               <div className="block text-white">
-                <Link to={"/"} className='text-red-600 font-bold lg:text-4xl text-2xl'>olma.uz</Link>
+                <Link to={"/"} className='text-red-600 font-bold lg:text-4xl text-2xl'>Logo.uz</Link>
                 <div className="block w-full">
                   <p className='text-white text-sm mt-5'>Телефон поддержки</p>
                   <p className='text-white text mt-2 font-medium'>+998 (94) 554 55 94</p>

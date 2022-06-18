@@ -174,7 +174,7 @@ export const productData = [
     price: 27798000,
     brandName: "Dell",
     brandImgUrl: "https://olcha.uz/uploads/images/manufacturer/KK/KK/K3/1646039369.jpg",
-    category: "Ноутбук",
+    category: "Noutbook",
     group: "best"
   },
   // two product
@@ -209,20 +209,6 @@ export const productData = [
     brandName: "Huawei",
     brandImgUrl: "https://olcha.uz/uploads/images/manufacturer/KK/KK/K2/1650948091.jpg",
     category: "planshet",
-    group: "new"
-  },
-  {
-    id: "intel-core-i9-11900k-35-ghz-16mb-oem-lga1200-rocket-lake",
-    title: "Intel-Core i9 - 11900K, 3.5 GHz, 16MB, oem, LGA1200, Rocket Lake",
-    imgUrl: [
-      "https://olcha.uz/image/200x200/products/ChUvWctzK7a25luU0XtvbvLey4GvZmcASItFI8lNzae9c7CKCjMo8OK4RfCt.jpeg",
-      "https://olcha.uz/image/425x425/products/ChUvWctzK7a25luU0XtvbvLey4GvZmcASItFI8lNzae9c7CKCjMo8OK4RfCt.jpeg",
-    ],
-    description: "Гарантийный срок (месяц): 12", 
-    price: 7209000 ,
-    brandName: "Intel",
-    brandImgUrl: "https://olcha.uz/uploads/images/manufacturer/KK/KK/KH/1628749328.png",
-    category: " ",
     group: "new"
   },
   {
@@ -290,7 +276,7 @@ export const productData = [
     brandName: "acer",
     brandImgUrl: "https://olcha.uz/uploads/images/manufacturer/KK/KK/Kc/1646039131.jpg",
     category: "noutbook",
-    group: "new"
+    group: "best"
   },
   {
     id: "noutbuk-hp-victus-16-d0023dx-i5-11400h-8256gb-ssd-geforce-rtx3050-win11h-161",

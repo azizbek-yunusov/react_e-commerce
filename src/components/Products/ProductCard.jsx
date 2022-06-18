@@ -15,12 +15,12 @@ const ProductCard = ({id, title, price, imgUrl, groupName, classes, group}) => {
     setAnimtedHeart(!animtedHeart)
   }
   return (
-    <div className="lg:mx-3 mx-1 selection:inset-0 lg:border-0 lg:rounded-2xl rounded-xl border border-gray-100 mt-4 hover:rounded-xl lg:hover:shadow-xl ease-linear opacityAnimeted">
+    <div className=" lg:mx-3 mx-1 selection:inset-0 lg:border-0 lg:rounded-2xl rounded-xl border border-gray-100 mt-4 lg:hover:shadow-lg ease-linear opacityAnimeted">
       <div className="relative flex justify-between h-full flex-col pt-1 px-3 pb-3">
-        <div className="absolute top-0 right-0 p-2 cursor-pointer">
+        <div className="absolute top-0 right-0 lg:p-2 p-1 cursor-pointer">
             {!showHeart ? <div onMouseEnter={toggleHovered} onMouseLeave={toggleHovered} onClick={handleHeart} className={animtedHeart ? "animtedHeart text-red-600" : " text-red-600"}>{HeartRegIcon} </div> : <div onClick={handleHeart} className="">{HeartSolIcon} </div> }
         </div>
-        <div className="absolute top-0 ml-3 mt-2 left-0 text-yellow-500 lg:rounded-md rounded px-3 py-[2px] pb-[4px] bg-zinc-800 font-semibold text-xs" >{group}</div>
+        <div className="absolute top-0 lg:ml-3 lg:mt-2 ml-2 mt-1 left-0 text-yellow-500 lg:rounded rounded-sm px-3 py-[2px] pb-[4px] bg-zinc-800 font-semibold text-xs" >{group}</div>
         {/* <div className="absolute top-12 right-0 p-2 cursor-pointer">
             {!copyUrl ? <div onClick={copy} className="">{BackIcon} </div> : <div className="">"copy"</div> }
         </div> */}
@@ -31,9 +31,11 @@ const ProductCard = ({id, title, price, imgUrl, groupName, classes, group}) => {
             className="align-middle mt-0"
           />
         </Link>
-        
-        <h1 className='float-left mt-2 font-sans text-md'>
+        <h1 className='hidden lg:block float-left mt-2 font-sans text-md'> {/* desktop title */}
           {title}
+        </h1>
+        <h1 className='block lg:hidden float-left mt-2 font-sans text-md'> {/* mobile title */}
+          {title.slice(0, 40)}
         </h1>
         <p className='float-left mt-2 font-semibold text-lg'>
           {numberWithCommas(price)}{""}cум

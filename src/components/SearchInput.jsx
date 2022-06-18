@@ -20,7 +20,9 @@ const SearchInput = () => {
     console.log(searchTerm);
     const newFilterAutoComplete = productData.filter((value) => {
       return (
-        value.title.toLowerCase().includes(searchTerm.toLowerCase())
+        value.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
+        value.category.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        value.brandName.toLowerCase().includes(searchTerm.toLowerCase())
       )
     })
     

@@ -7,7 +7,7 @@ const TopLink = () => {
     <div className="bg-zinc-700 -z-10 w-full border-b border-b-gray-900">
       <div className="container-full lg:py-3 py-2 flex items-center justify-between">
         <div className="flex">
-          <Link className='lg:pr-11 pr-2 text-red-600 font-bold lg:text-4xl text-xl lg:hidden block' to="/">olma.uz</Link>
+          <Link className='lg:pr-11 pr-2 text-red-600 font-bold lg:text-4xl text-xl lg:hidden block' to="/">Logo.uz</Link>
 
           <div className="lg:flex hidden">
             <img 

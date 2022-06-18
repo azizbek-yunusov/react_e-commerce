@@ -31,7 +31,7 @@ var settings = {
     
 const Catalog = () => {
   return (
-    <div className="container-full lg:my-5 my-0 PageAnimated">
+    <div className="container-full lg:my-0 my-0 PageAnimated">
       <Carousel 
         {...settings}
         shouldResetAutoplay={false} 

@@ -19,7 +19,7 @@ const SideBarCatalog = () => {
       <div onClick={() => dispatch(handleSideBar())} className="opasityAnimated min-h-screen bg-black w-screen backdrop-blur-[1px]"></div>
       <div className="fixed sideAnimated top-0 min-h-screen left-0 bg-gray-100 lg:w-[50%] w-[80%]">
         <div className="w-full lg:px-5 px-3 bg-zinc-800 py-3 flex justify-between items-center">
-          <Link className='text-red-600 font-bold lg:text-4xl text-xl' to="/">olma.uz</Link>
+          <Link className='text-red-600 font-bold lg:text-4xl text-xl' to="/">Logo.uz</Link>
           <button onClick={() => dispatch(handleSideBar())} className='p-1 rounded-full border-gray-100 border text-white'>
           {CloseIcon}
           </button>

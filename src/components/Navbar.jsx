@@ -33,7 +33,7 @@ const Navbar = ({id, title, imgUrl, price}) => {
     <nav className={`w-full py-2 bg-gray-100 ${stickyClass} navbar-class  scroll-smooth`}>
       <div className="container-full lg:overflow-visible overflow-hidden flex items-center lg:justify-between">
         <div className="lg:flex hidden items-center justify-between">
-          <Link className='lg:pr-11 pr-2 text-red-600 font-bold lg:text-4xl text-xl lg:block hidden' to="/">olma.uz</Link>
+          <Link className='lg:pr-11 pr-2 text-red-600 font-bold lg:text-4xl text-xl lg:block hidden' to="/">Logo.uz</Link>
           <CatalogBtn />
         </div>
         <div onClick={() => dispatch(handleSideBar())} className="p-[6px] lg:hidden bg-yellow-400 rounded-lg mr-3">

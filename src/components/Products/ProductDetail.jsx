@@ -139,7 +139,7 @@ const ProductDetail = () => {
                 <p className="ml-3 font-semibold">в корзину</p>
               </button>
               <div className="lg:py-2 py-1 font-normal flex justify-center bg-gray-200 rounded-lg lg:my-4 text-zinc-800 my-3">
-                Рассрочка от <p className="font-semibold lg:ml-[5px]">{numberWithCommas(Math.floor(product.price/24))} cум / 24 мес.</p> 
+                Рассрочка от <p className="font-semibold lg:ml-[5px] ml-[2px]">{numberWithCommas(Math.floor(product.price/24))} cум / 24 мес.</p> 
               </div>
               <button className="text-xl font-normal rounded-lg flex items-center justify-center lg:py-4 py-3 w-full bg-zinc-700 active:opacity-80 transition-opacity text-white">
                 Купить в рассрочку

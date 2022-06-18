@@ -4,7 +4,7 @@ import ProductsList from './ProductsList'
 
 const GroupsList = () => {
   return (
-    <div className='py-2 lg:my-5 my-0'>
+    <div className=''>
       {
         groupData.map(groupel => (
           <ProductsList {...groupel} key={groupel.id}/>
