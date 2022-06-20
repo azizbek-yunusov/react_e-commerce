@@ -28,6 +28,18 @@ const Navbar = ({id, title, imgUrl, price}) => {
       windowHeight > 180 ? setStickyClass('fixed top-0 left-0 z-10 scrollAnimated lg:py-[6px] py-2') : setStickyClass('relative');
     }
   };
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
+  //     if (
+  //       document.body.scrollTop > 80 ||
+  //       document.documentElement.scrollTop > 80
+  //     ) {
+  //       headerRef?.current?.classList.add("shrink");
+  //     } else {
+  //       headerRef?.current?.classList.remove("shrink");
+  //     }
+  //   });
+  // }, []);
   //  
   return (
     <nav className={`w-full py-2 bg-gray-100 ${stickyClass} navbar-class  scroll-smooth`}>

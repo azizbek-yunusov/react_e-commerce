@@ -13,7 +13,7 @@ import { addToBasket } from '../../redux/actions';
 
 
 const ProductDetail = () => {
-  const [selectedImg, setSelectedImg] = useState(1)
+  const [selectedImg, setSelectedImg] = useState(0)
   const [copyUrl, setCopyUrl] = useState(false)
   // scroll to top
   const location = useLocation();
@@ -35,12 +35,11 @@ const ProductDetail = () => {
   // console.log(historys);
   const dispatch = useDispatch()
   const { id } = useParams()
-  const details = productData.filter((product, index) => {
+  const details = productData.filter((product) => {
     return (
       product.id === id
     )
   })
-
   return (
     <div className='h-full min-h-[500px] animated-show'>
       {details.map(product => (
@@ -119,8 +118,9 @@ const ProductDetail = () => {
             <div className="block px-2">
               <p className="text-3xl lg:font-medium font-semibold mt-2 lg:mt-0">{numberWithCommas(product.price)}{" "}cум </p>
               <div className="">
-                <p className="lg:text-2xl text-xl leading-6 font-medium mt-5 text-zinc-800">Коротко о товаре:</p>
-                <h1 className="text-lg leading-6 lg:mt-5 mt-3 text-zinc-600">{product.description}</h1>
+                <p className="lg:text-xl text-lg leading-6 font-semibold mt-5 text-zinc-800">Коротко о товаре:</p>
+                <p className="text-lg leading-6 font-normal lg:mt-4 mt-3 text-zinc-800">Гарантийный срок (месяц):{" "}{product.warranty}</p>
+                <h1 className="text-lg leading-6 lg:mt-3 mt-2 text-zinc-600">{product.description}</h1>
               </div>
             </div>
             <div className="border border-zinc-300 rounded-lg lg:m-0 mt-3 p-5">
