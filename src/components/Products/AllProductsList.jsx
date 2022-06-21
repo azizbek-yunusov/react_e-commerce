@@ -18,9 +18,9 @@ const AllProductsList = () => {
   }, [location])
   console.log(`grop by ${group}`);
   return (
-    <div className="container-full lg:my-5 my-3">
+    <div className="w-full lg:my-5 my-3">
       <div className="flex justify-between items-center my-2 ">
-        <div className="flex items-center text-zinc-700">
+        <div className="flex container-full items-center text-zinc-700">
         <button onClick={() => goback(-1)} className='lg:px-4 lg:pr-5 px-2 text-md  rounded-full mr-4 py-2 flex items-center font-medium border border-gray-300'>
           <svg
             xmlns="http://www.w3.org/2000/svg"
