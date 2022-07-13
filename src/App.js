@@ -12,8 +12,7 @@ import ProductDetail from './components/Products/ProductDetail';
 import SearchReslut from './components/SearchReslut';
 import CategoryList from './components/Catalog/CategoryList';
 import BrandProductsList from './components/Brands/BrandProductsList';
-import AllProductsList from './components/Products/AllProductsList';
-
+import AllProductsList from './components/Products/AllProductsList'; 
 function App() {
   return (
     <>
