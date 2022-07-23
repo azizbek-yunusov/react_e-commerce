@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect} from 'react'
 import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import { productData } from '../../dataBase/productData'
-import BestItem from '../BestItem'
-import { ListSkeleton } from "../Loaders/ListSkeleton";
 import ProductCard from './ProductCard';
 
 const AllProductsList = () => {

@@ -301,11 +301,11 @@ export const productData = [
 
 ]
 export const bannerData = [
-  {
-    id: "12",
-    title: "smart",
-    bannerURl: "https://texnomart.uz/uploads/slides/188565%D0%B3%D0%B0%D1%80%D0%B0%D0%BD%D1%82%D0%B8%D1%8F.webp"
-  },
+  // {
+  //   id: "12",
+  //   title: "smart",
+  //   bannerURl: "https://texnomart.uz/uploads/slides/188565%D0%B3%D0%B0%D1%80%D0%B0%D0%BD%D1%82%D0%B8%D1%8F.webp"
+  // },
   {
     id: "13",
     title: "mackbook",
