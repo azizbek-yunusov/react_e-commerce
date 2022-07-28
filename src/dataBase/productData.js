@@ -301,20 +301,20 @@ export const productData = [
 
 ]
 export const bannerData = [
-  // {
-  //   id: "12",
-  //   title: "smart",
-  //   bannerURl: "https://texnomart.uz/uploads/slides/188565%D0%B3%D0%B0%D1%80%D0%B0%D0%BD%D1%82%D0%B8%D1%8F.webp"
-  // },
+  {
+    id: "12",
+    title: "smart",
+    bannerURl: "https://backend.texnomart.uz/uploads/slides/211270ru.jpg"
+  },
   {
     id: "13",
     title: "mackbook",
-    bannerURl: "https://texnomart.uz/uploads/slides/7255091920x400%20%D1%80%D1%83%D1%81%D1%81.png"
+    bannerURl: "https://backend.texnomart.uz/uploads/slides/188565%D0%B3%D0%B0%D1%80%D0%B0%D0%BD%D1%82%D0%B8%D1%8F.png"
   },
   {
     id: "14",
     title: "dostavka",
-    bannerURl: "https://texnomart.uz/uploads/slides/9163881920%D1%85400%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0.png"
+    bannerURl: "https://backend.texnomart.uz/uploads/slides/9163881920%D1%85400%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0.png"
   }
 ]
 export const categoryData = [
@@ -421,33 +421,33 @@ export const offers = [
     id: "30",
     name: "Покупка в рассрочку",
     title: "Удобная онлайн рассрочка на товары бытовой техники в Texnomart",
-    imgUrl: "https://texnomart.uz/files/global/new-photo/img/shop-advantage/perechilsenie.svg",
+    imgUrl: "https://texnomart.uz/_nuxt/img/da8d77c.svg",
     description: " "
   },
   {
     id: "31",
     name: "Бесплатная доставка",
     title: "Условия доставки товаров в Техномарт",
-    imgUrl: "https://texnomart.uz/files/global/new-photo/img/shop-advantage/delivery.svg",
+    imgUrl: "https://texnomart.uz/_nuxt/img/de0c0ae.svg",
     description: " "
   },  
   {
     id: "32",
     name: "Гарантия на товары",
     title: "Узнайте всё о гарантии и возврате товара в Texnomart",
-    imgUrl: "https://texnomart.uz/files/global/new-photo/img/shop-advantage/warranty.svg",
+    imgUrl: "https://texnomart.uz/_nuxt/img/575d98a.svg",
     description: " "
   },  {
     id: "33",
     name: "Бонусная система",
     title: "Бонусная система",
-    imgUrl: "https://texnomart.uz/files/global/new-photo/img/shop-advantage/bonus.svg",
+    imgUrl: "https://texnomart.uz/_nuxt/img/4086694.svg",
     description: " "
   },  {
     id: "34",
     name: "Помощь",
     title: "Частые вопросы",
-    imgUrl: "https://texnomart.uz/files/global/new-photo/img/shop-advantage/help.svg",
+    imgUrl: "https://texnomart.uz/_nuxt/img/513f513.svg",
     description: " "
   },
 ]
