@@ -1,75 +1,106 @@
-import React, { useEffect } from 'react'
-import { handeleBasketShow } from '../redux/actions'
-import BasketListItem from './BasketListItem'
-import { useSelector, useDispatch } from 'react-redux'
-import emptyIcon from "../assets/img/empty.png"
-import { CloseIcon } from './svg'
-import { numberWithCommas } from './numberWithCommas'
+import React, { useEffect } from "react";
+import { handeleBasketShow } from "../redux/actions";
+import BasketListItem from "./BasketListItem";
+import { useSelector, useDispatch } from "react-redux";
+import emptyIcon from "../assets/img/empty.png";
+import { CloseIcon } from "./svg";
+import { numberWithCommas } from "./numberWithCommas";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const BasketList = () => {
-  const dispatch = useDispatch()
-  const { order, isBasketShow } = useSelector(state => state)
+  const dispatch = useDispatch();
+  const { order, isBasketShow } = useSelector((state) => state);
   const totalPrice = order.reduce((sum, el) => {
-    return sum + el.price * el.quantity
-  }, 0)
+    return sum + el.price * el.quantity;
+  }, 0);
 
   useEffect(() => {
-    document.body.style.overflow = "hidden"
+    document.body.style.overflow = "hidden";
     return () => {
-      document.body.style.overflow = "auto"
-      }
-  })
-  return (  
+      document.body.style.overflow = "auto";
+    };
+  });
+  return (
     <div className="slider-animation z-40 fixed top-0 left-0 w-[100vw] lg:h-full h-full bg-[#000000] backdrop-blur-[1px] bg-opacity-40 lg:py-9 ">
-      <div onClick={() => dispatch(handeleBasketShow())} className="absolute inset-0 bgAnime transition-opacity"></div>
+      <div
+        onClick={() => dispatch(handeleBasketShow())}
+        className="absolute inset-0 bgAnime transition-opacity"
+      ></div>
 
-      <div className="BasketAnimated w-full flex items-center justify-center z-50 h-full"> 
+      <div className="BasketAnimated w-full flex items-center justify-center z-50 h-full">
         <div className="relative rounded-none lg:min-w-[850px] min-w-full lg:rounded-md flex flex-col h-full justify-start lg:my-16 lg:min-h-full mt-0 z-50 bg-white overflow-hidden">
           <div className="overflow-hidden w-full bg-yellow-400 lg:py-5 py-3 px-4 lg:px-5 flex lg:items-center items-start justify-between">
-            <h1 className="text-lg font-semibold text-zinc-800">Купить сейчас</h1>
-            <div onClick={() => dispatch(handeleBasketShow())} className="close cursor-pointer p-1 border text-zinc-600 border-zinc-600 rounded-full">{CloseIcon}</div>
+            <h1 className="text-lg font-semibold text-zinc-800">
+              Купить сейчас
+            </h1>
+            <div
+              onClick={() => dispatch(handeleBasketShow())}
+              className="close cursor-pointer p-1 border text-zinc-600 border-zinc-600 rounded-full"
+            >
+              {CloseIcon}
+            </div>
           </div>
           <ul className="overflow-y-scroll lg:max-h-[500px] h-full  px-4">
-            {order.length ? order.map(item => {
-              return (
-                <BasketListItem key={item.id} {...item} />
-              )
-            }) : <div className='w-full flex py-6 items-center flex-col justify-center emptyAnimated '>
-                  <img 
-                    src={emptyIcon} 
-                    alt="not order" 
-                    className='align-middle' 
-                    width={300} 
-                    height={300} />
-                    <h1 className="text-2xl text-center font-semibold max-w-[200px]">В корзине поканичего нет</h1>
-                  </div>}
+            {order.length ? (
+              order.map((item) => {
+                return <BasketListItem key={item.id} {...item} />;
+              })
+            ) : (
+              <div className="w-full flex py-6 items-center flex-col justify-center emptyAnimated ">
+                <LazyLoadImage
+                  src={emptyIcon}
+                  alt="not order"
+                  className="align-middle"
+                  width={300}
+                  height={300}
+                  effect="blur"
+                />
+                <h1 className="text-2xl text-center font-semibold max-w-[200px]">
+                  В корзине поканичего нет
+                </h1>
+              </div>
+            )}
           </ul>
-          {
-            order.length ?
-            (<div className="bg-gray-100 relative bottom-0 left-0 w-full flex lg:flex-col justify-between lg:px-5 px-3 lg:pb-5 pb-2">
+          {order.length ? (
+            <div className="bg-gray-100 relative bottom-0 left-0 w-full flex lg:flex-col justify-between lg:px-5 px-3 lg:pb-5 pb-2">
               <div className="float-right lg:flex lg:justify-between py-3">
-                <p className="text-zinc-700 lg:text-lg font-medium ">Итого{" "}{order.length}{" "}товара</p>
-                <p className="float-right mt-2 lg:mt-0 lg:text-2xl text-xl font-bold">{numberWithCommas(totalPrice)}{" "}cум</p>
+                <p className="text-zinc-700 lg:text-lg font-medium ">
+                  Итого {order.length} товара
+                </p>
+                <p className="float-right mt-2 lg:mt-0 lg:text-2xl text-xl font-bold">
+                  {numberWithCommas(totalPrice)} cум
+                </p>
               </div>
               <div className="flex lg:justify-between lg:items-center items-end">
-                <button onClick={() => dispatch(handeleBasketShow())} className="border-2 border-gray-200 lg:px-11 lg:py-3 px-2 py-2 rounded-lg hidden lg:block font-medium text-zinc-800">Продолжить покупки</button>
-                <button className="bg-yellow-400 lg:px-11 lg:py-3 lg:m-0 mb-4 px-2 py-2 rounded-md font-medium text-zinc-800">Оформить покупку</button>
+                <button
+                  onClick={() => dispatch(handeleBasketShow())}
+                  className="border-2 border-gray-200 lg:px-11 lg:py-3 px-2 py-2 rounded-lg hidden lg:block font-medium text-zinc-800"
+                >
+                  Продолжить покупки
+                </button>
+                <button className="bg-yellow-400 lg:px-11 lg:py-3 lg:m-0 mb-4 px-2 py-2 rounded-md font-medium text-zinc-800">
+                  Оформить покупку
+                </button>
               </div>
-            </div> ) :
-            <div onClick={() => dispatch(handeleBasketShow())} className="flex items-center justify-center">
-              <button className='cursor-pointer px-4 lg:mb-0 my-5 py-2 border-2 rounded-lg border-yellow-500'>Перейти к покупкам</button>
             </div>
-          }
+          ) : (
+            <div
+              onClick={() => dispatch(handeleBasketShow())}
+              className="flex items-center justify-center"
+            >
+              <button className="cursor-pointer px-4 lg:mb-9 my-5 py-2 border-2 rounded-lg border-orange-500">
+                Перейти к покупкам
+              </button>
+            </div>
+          )}
         </div>
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default BasketList
-
-
+export default BasketList;
 
 // <div className="z-20 fixed inset-0 overflow-hidden basket">
 // <div className="absolute inset-0 overflow-hidden">
