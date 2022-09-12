@@ -1,4 +1,4 @@
-<a href="https://e-commerce-ecru-gamma.vercel.app" target="_blank"><h1>LIVE DEMO VERCEL</h1></a>
+<a href="https://e-commerce-react-betta.vercel.app/" rel="noreferrer" target="_blank"><h1>LIVE DEMO VERCEL</h1></a>
 <hr/>
 # Getting Started with Create React App
 
