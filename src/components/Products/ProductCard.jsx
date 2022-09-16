@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { HeartRegIcon, HeartSolIcon } from "../svg";
@@ -6,36 +6,38 @@ import { numberWithCommas } from "../numberWithCommas";
 import { addToBasket } from "../../redux/actions";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { motion, useInView } from "framer-motion";
 
-const ProductCard = ({
-  id,
-  title,
-  price,
-  imgUrl,
-  groupName,
-  classes,
-  group,
-}) => {
+const ProductCard = ({ id, title, price, imgUrl, group, index }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   const [showHeart, setShowHeart] = useState(false);
   const [animtedHeart, setAnimtedHeart] = useState(false);
   const handleHeart = () => {
     setShowHeart(!showHeart);
   };
+  console.log(index);
   const dispatch = useDispatch();
   const toggleHovered = () => {
     setAnimtedHeart(!animtedHeart);
   };
   return (
-    <div className=" lg:mx-3 mx-1 selection:inset-0 lg:border-0 lg:rounded-2xl rounded-xl border border-gray-100 mt-4 lg:hover:shadow-lg ease-linear lg:mb-3 opacityAnimeted">
+    <motion.div
+      ref={ref}
+      initial={{ x: -80, scale: 0.5, opacity: 0 }}
+      animate={{ x: isInView ? 0 : -80, scale: isInView ? 1 : 0, opacity: isInView ? 1 : 0 }}
+      transition={{ duration: 0.6, delay: (index + 1) / 12, type: "spring" }}
+      className=" lg:mx-3 mx-1 selection:inset-0 lg:border-0 lg:rounded-2xl rounded-xl border border-gray-100 mt-4 lg:hover:shadow-xl ease-linear lg:mb-3"
+    >
       <div className="relative flex justify-between h-full flex-col pt-1 px-3 pb-3">
-        <div className="absolute top-0 right-0 lg:p-2 p-1 cursor-pointer">
+        <div className="absolute top-0 right-0 lg:p-2 z-10 p-1 cursor-pointer">
           {!showHeart ? (
             <div
               onMouseEnter={toggleHovered}
               onMouseLeave={toggleHovered}
               onClick={handleHeart}
               className={
-                animtedHeart ? "animtedHeart text-red-600" : " text-red-600"
+                animtedHeart ? "animtedHeart text-red-600 " : " text-red-600"
               }
             >
               {HeartRegIcon}{" "}
@@ -62,10 +64,10 @@ const ProductCard = ({
             width={200}
             height={200}
             effect="blur"
-            className="align-middle mt-0"
+            className="align-middle mt-0 "
           />
         </Link>
-        <h1 className="hidden lg:block float-left mt-2 font-sans text-md">
+        <h1 className="hidden text-left lg:block float-left mt-2 font-sans text-md">
           {" "}
           {/* desktop title */}
           {title}
@@ -75,7 +77,7 @@ const ProductCard = ({
           {/* mobile title */}
           {title.slice(0, 40)}
         </h1>
-        <p className="float-left mt-2 font-semibold text-lg">
+        <p className="float-left text-left mt-2 font-semibold text-lg">
           {numberWithCommas(price)}
           {""}cум
         </p>
@@ -103,7 +105,7 @@ const ProductCard = ({
           в корзину
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -15,7 +15,7 @@ const Footer = () => {
     return () => {
       clearInterval(setShowModal(!showModal));
     };
-  }, []);
+  }, [showModal]);
   return (
     <div className="bg-zinc-800 pt-5 overflow-hidden">
       <div className="container-full lg:py-9 py-0">

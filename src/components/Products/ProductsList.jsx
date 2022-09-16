@@ -53,8 +53,8 @@ const ProductsList = ({id, groupName, group}) => {
         customLeftArrow={customLeftArrowPro}
         customRightArrow={customRightArrowPro}
         itemClass="" >
-        {groupFilter.map(item => (
-        <ProductCard groupName={groupName} key={item.id} {...item} />
+        {groupFilter.map((item, index) => (
+        <ProductCard groupName={groupName} index={index} key={item.id} {...item} />
       ))}
       </Carousel>
     </div>

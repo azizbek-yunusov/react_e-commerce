@@ -31,43 +31,14 @@ const Navbar = ({ id, title, imgUrl, price }) => {
   const { order, isBasketShow, isSideBarShow, isSignInShow } = useSelector(
     (state) => state
   );
-  const [stickyClass, setStickyClass] = useState("relative");
   const dispatch = useDispatch();
-  useEffect(() => {
-    window.addEventListener("scroll", stickNavbar);
 
-    return () => {
-      window.removeEventListener("scroll", stickNavbar);
-    };
-  }, []);
-
-  const stickNavbar = () => {
-    if (window !== undefined) {
-      let windowHeight = window.scrollY;
-      windowHeight > 180
-        ? setStickyClass(
-            "fixed top-0 left-0 z-10 scrollAnimated lg:py-[6px] py-2"
-          )
-        : setStickyClass("relative");
-    }
-  };
-  // useEffect(() => {
-  //   window.addEventListener("scroll", () => {
-  //     if (
-  //       document.body.scrollTop > 80 ||
-  //       document.documentElement.scrollTop > 80
-  //     ) {
-  //       headerRef?.current?.classList.add("shrink");
-  //     } else {
-  //       headerRef?.current?.classList.remove("shrink");
-  //     }
-  //   });
-  // }, []);
-  //
   return (
     <nav
       className={`w-full md:py-1 py-2 sticky z-50 select-none bg-gray-100 transition duration-300 ease-linear ${
-        !isTop ? "fixed top-0 transition duration-300 scrollAnimated ease-linear left-0 z-50  lg:py-1 py-2" : ""
+        !isTop
+          ? "fixed top-0 transition duration-300 scrollAnimated ease-linear left-0 z-50  lg:py-1 py-2"
+          : ""
       } navbar-class  scroll-smooth`}
     >
       <div className="container-full lg:overflow-visible overflow-hidden flex items-center lg:justify-between">

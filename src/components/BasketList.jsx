@@ -6,11 +6,11 @@ import emptyIcon from "../assets/img/empty.png";
 import { CloseIcon } from "./svg";
 import { numberWithCommas } from "./numberWithCommas";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const BasketList = () => {
   const dispatch = useDispatch();
-  const { order, isBasketShow } = useSelector((state) => state);
+  const { order } = useSelector((state) => state);
   const totalPrice = order.reduce((sum, el) => {
     return sum + el.price * el.quantity;
   }, 0);

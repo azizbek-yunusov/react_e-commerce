@@ -6,8 +6,8 @@ const GroupsList = () => {
   return (
     <div className=''>
       {
-        groupData.map(groupel => (
-          <ProductsList {...groupel} key={groupel.id}/>
+        groupData.map((groupel, index) => (
+          <ProductsList {...groupel} index={index} key={groupel.id}/>
         ))
       }
     </div>

@@ -25,6 +25,18 @@ button {
   background: #a600ff;
   color: #ffffff;
 }
+::-webkit-scrollbar:horizontal {
+  background: none;
+  width: 0;
+  display: none;
+  height: 0;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  background: none;
+  display: none;
+  width: 0;
+  height: 0;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

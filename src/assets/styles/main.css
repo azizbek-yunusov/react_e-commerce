@@ -1,4 +1,4 @@
-.slider-animation {
+/* .slider-animation {
   animation: slider .4s;
 }
 @keyframes slider {
@@ -11,7 +11,7 @@
 }
 .full-page {
   animation: opacityS .5s ease-out;
-}
+} */
 .arrow-btn {
   transition: all 300ms ease;
 }

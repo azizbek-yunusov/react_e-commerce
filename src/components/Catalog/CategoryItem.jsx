@@ -1,19 +1,16 @@
-import React, { useEffect, useState} from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { Link, useLocation } from 'react-router-dom'
-import { addToBasket, handeleBasketShow } from '../../redux/actions'
-import { BackIcon, HeartRegIcon, HeartSolIcon } from '../svg'
-import { createBrowserHistory } from 'history'
+import React, { useState} from 'react'
+import { useDispatch } from 'react-redux'
+import { Link } from 'react-router-dom'
+import { addToBasket } from '../../redux/actions'
+import { HeartRegIcon, HeartSolIcon } from '../svg'
 import { numberWithCommas } from '../numberWithCommas'
 const CategoryItem = ({id, title, price, imgUrl}) => {
-  const loc = useLocation()
   const [showHeart, setShowHeart] = useState(false)
   const [animtedHeart, setAnimtedHeart] = useState(false)
   const handleHeart = () => {
     setShowHeart(!showHeart)
   }
   const dispatch = useDispatch()
-  const { isGoBasketShow } = useSelector(state => state)
   const toggleHovered = () => {
     setAnimtedHeart(!animtedHeart)
   }
