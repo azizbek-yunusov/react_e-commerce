@@ -52,7 +52,7 @@ const SearchInput = () => {
       <form
         onClick={toggleMobileSearchBar}
         onSubmit={submitAction}
-        className="flex items-center border-2 border-yellow-400 justify-between rounded-lg bg-white max-h-12 lg:w-auto w-full"
+        className="flex items-center border-2 border-yellow-400 justify-between rounded-lg bg-white max-h-11 lg:w-auto w-full"
       >
         <input
           type="text"

@@ -89,7 +89,7 @@ const BasketList = () => {
               onClick={() => dispatch(handeleBasketShow())}
               className="flex items-center justify-center"
             >
-              <button className="cursor-pointer px-4 lg:mb-9 my-5 py-2 border-2 rounded-lg border-orange-500">
+              <button className="cursor-pointer px-4 lg:mb-9 my-5 py-2 border-2 rounded-lg border-yellow-500">
                 Перейти к покупкам
               </button>
             </div>
