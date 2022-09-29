@@ -16,7 +16,6 @@ const ProductCard = ({ id, title, price, imgUrl, group, index }) => {
   const handleHeart = () => {
     setShowHeart(!showHeart);
   };
-  console.log(index);
   const dispatch = useDispatch();
   const toggleHovered = () => {
     setAnimtedHeart(!animtedHeart);
@@ -30,7 +29,7 @@ const ProductCard = ({ id, title, price, imgUrl, group, index }) => {
         scale: isInView ? 1 : 0,
         opacity: isInView ? 1 : 0,
       }}
-      transition={{ duration: 0.6, delay: (index + 1) / 12, type: "spring" }}
+      transition={{ duration: 0.6, delay: (index + 1) / 14, type: "spring" }}
       className=" lg:mx-3 mx-1 selection:inset-0 lg:border-0 lg:rounded-2xl rounded-xl border border-gray-100 mt-4 lg:hover:shadow-xl ease-linear lg:mb-3"
     >
       <div className="relative flex justify-between h-full flex-col pt-1 px-3 pb-3">

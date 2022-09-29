@@ -35,11 +35,11 @@ const Navbar = ({ id, title, imgUrl, price }) => {
 
   return (
     <nav
-      className={`w-full md:py-1 py-2 sticky z-50 select-none bg-gray-100 transition duration-300 ease-linear ${
+      className={`w-full md:py-1 py-2 sticky z-50 select-none bg-gray-100 ${
         !isTop
-          ? "fixed top-0 transition duration-300 scrollAnimated ease-linear left-0 z-50  lg:py-1 py-2"
+          ? "fixed top-0 left-0 z-50  lg:py-1 py-2"
           : ""
-      } navbar-class  scroll-smooth`}
+      }  scroll-smooth`}
     >
       <div className="container-full lg:overflow-visible overflow-hidden flex items-center lg:justify-between">
         <div className="lg:flex hidden items-center justify-between">

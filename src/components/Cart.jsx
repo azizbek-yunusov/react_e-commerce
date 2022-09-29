@@ -14,7 +14,7 @@ const Cart = () => {
     >
       <div className="z-10 block relative">
         <div className="p-3">
-          <FiShoppingCart className="md:text-2xl text-gray-800" />
+          <FiShoppingCart className="text-2xl text-gray-800" />
         </div>
         {quantity ? (
           <span className="absolute top-[2px] right-1 mr-1 mt-1 bg-red-500 md:px-[5px] md:py-[1px] px-[5px] py-[2px] rounded-full text-white font-medium text-xs">

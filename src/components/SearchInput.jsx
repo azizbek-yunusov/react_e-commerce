@@ -16,7 +16,7 @@ const SearchInput = () => {
   const handleAutoComplete = (e) => {
     const searchTerm = e.target.value;
     setTerm(searchTerm);
-    console.log(searchTerm);
+    // console.log(searchTerm);
     const newFilterAutoComplete = productData.filter((value) => {
       return (
         value.title.toLowerCase().includes(searchTerm.toLowerCase()) ||

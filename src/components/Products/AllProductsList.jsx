@@ -14,7 +14,7 @@ const AllProductsList = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [location])
-  console.log(`grop by ${group}`);
+  // console.log(`grop by ${group}`);
   return (
     <div className="w-full lg:my-5 my-3">
       <div className="flex justify-between items-center my-2 ">

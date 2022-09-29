@@ -9,7 +9,7 @@ const Modal = () => {
     // return () => {
     //   second
     // }
-  }, [showModal]);
+  }, []);
 
   return (
     <div className="hidden lg:max-w-sm w-full lg:h-[250px] lg:rounded-xl p-2 bg-red-600 fixed bottom-11 right-10">
